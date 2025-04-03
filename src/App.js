@@ -4,13 +4,15 @@ function App() {
   return (
     <>
       <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href='App.css' rel="stylesheet" />
       <title>Jinks Portfolio</title>
-      <div className="header">
-          <h1>Ethan Jinks</h1>
+      <div className="header bubble">
+          <p class="text-sm">Ethan Jinks</p>
           <h2>Welcome to my portfolio!</h2>
       </div>
       <br />
-      <div className="aboutMe">
+      <div className="aboutMe bubble" >
           <h2>About Me</h2>
           <h3>
           Hi! My name is Ethan Jinks. I'm a junior Computer Science major at Stevens
@@ -21,7 +23,7 @@ function App() {
           used to help others!
           </h3>
       </div>
-      <div className="projects">
+      <div className="projects bubble">
           <h2>Projects</h2>
           <ul>
           <li>
@@ -51,7 +53,7 @@ function App() {
           </li>
           </ul>
       </div>
-      <div className="quote">
+      <div className="quote bubble">
           <blockquote>
           <h3 id="quote">
               The world is full of kind people. If you can't find one, be one.
@@ -59,12 +61,6 @@ function App() {
           <h3> - Unknown </h3>
           </blockquote>
       </div>
-      <style
-          dangerouslySetInnerHTML={{
-          __html:
-              "\n        body {\n            background-color: #0D1B2A;\n            color: #1B263B;\n            font-variant-caps: petite-caps;\n        }\n\n        .header {\n            text-align: center;\n            margin: auto;\n            background-color: #B8C6DB;\n            border-radius: 25px;\n            width: 35%;\n            border: 4px solid rgb(51, 44, 65);\n        }\n\n        div {\n            background-color: #B8C6DB;\n        }\n\n        .quote {\n            text-align: center;\n            width: 25%;\n            margin: auto;\n            border-radius: 10%;\n            display: flex;\n            flex-wrap: wrap;\n        }\n\n        .aboutMe {\n            margin: auto;\n            width: 75%;\n            padding-left: 2%; \n            padding-right: 2%;\n            padding-top: 1%;\n            padding-bottom: 1%;\n            border-radius: 15px;\n        }\n\n        .projects {\n            width: 90%;\n            margin: auto;\n            margin-top: 2%;\n            margin-bottom: 2%;\n            border-radius: 10%;\n            padding-left: 2%; \n            padding-right: 2%;\n            padding-top: 2%;\n            padding-bottom: 2%;\n        }\n\n        .projects h3 {\n            font-size: large;\n        }\n    "
-          }}
-      />
     </>
   );
 }
